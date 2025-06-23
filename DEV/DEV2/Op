@@ -1,0 +1,61 @@
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\hp\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+
+📊 Head of dataset:
+  Label                                            Message
+0   ham  Go until jurong point, crazy.. Available only ...
+1   ham                      Ok lar... Joking wif u oni...
+2  spam  Free entry in 2 a wkly comp to win FA Cup fina...
+3   ham  U dun say so early hor... U c already then say...
+4   ham  Nah I don't think he goes to usf, he lives aro...
+
+🔍 Dataset Info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 5572 entries, 0 to 5571
+Data columns (total 2 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   Label    5572 non-null   object
+ 1   Message  5572 non-null   object
+dtypes: object(2)
+memory usage: 87.2+ KB
+None
+
+📈 Summary Statistics:
+       Label                 Message
+count   5572                    5572
+unique     2                    5169
+top      ham  Sorry, I'll call later
+freq    4825                      30
+
+🧹 Missing values:
+Label      0
+Message    0
+dtype: int64
+
+📊 Class Distribution:
+Label
+ham     4825
+spam     747
+Name: count, dtype: int64
+c:\Users\hp\Documents\DEV\DEV2.py:74: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `y` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=spam_df, x='Freq', y='Word', palette='Reds_r')
+c:\Users\hp\Documents\DEV\DEV2.py:81: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `y` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=ham_df, x='Freq', y='Word', palette='Blues_r')
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py:862: UserWarning: Glyph 128232 (\N{INCOMING ENVELOPE}) missing from font(s) DejaVu Sans.
+  func(*args)
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py:1968: UserWarning: Glyph 128232 (\N{INCOMING ENVELOPE}) missing from font(s) DejaVu Sans.
+  return self.func(*args)
+
+📌 EDA Conclusions:
+- Spam messages are generally longer than ham messages.
+- Words like 'free', 'win', 'urgent' are frequent in spam.
+- Ham messages contain casual/conversational words like 'ok', 'come', 'home'.
+- Message length is a useful feature for spam detection.
