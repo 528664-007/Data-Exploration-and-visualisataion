@@ -1,0 +1,7 @@
+Monthly Temperature Summary
+Month  April  August  December  February  January  July  June  March  May  November  October  September
+City
+CityA     18      33        12        12       10    35    30     15   22        15       20         25
+CityB     17      32        11         9        8    34    29     13   21        14       19         24
+
+City with highest summer total temperature CityA

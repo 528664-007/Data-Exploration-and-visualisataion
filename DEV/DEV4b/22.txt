@@ -1,0 +1,18 @@
+Department Summary Report:
+  Department  Total_Hours  Average_Hours  Employee_Count
+0         HR          310          155.0               2
+1         IT          355          177.5               2
+2      Sales          335          167.5               2
+
+Department with highest average working hours: IT
+
+Pivot Table of Department Hours:
+                  sum       mean
+           Work_Hours Work_Hours
+Department
+HR                310      155.0
+IT                355      177.5
+Sales             335      167.5
+c:\Users\hp\Documents\DEV\DEV4b.py:33: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.

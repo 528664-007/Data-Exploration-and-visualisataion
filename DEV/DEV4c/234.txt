@@ -1,0 +1,36 @@
+'Date': pd.date_range(start='2024-01-01', periods=12, freq='M').tolist() * 2,
+📊 Monthly Temperature Summary:
+ Month  April  August  December  February  January  July  June  March  May  November  October  September
+City
+CityA     18      33        12        12       10    35    30     15   22        15       20         25
+CityB     17      32        11         9        8    34    29     13   21        14       19         24
+
+🔥 City with highest summer temperature total: CityA
+c:\Users\hp\Documents\DEV\DEV4c.py:40: FutureWarning: 'M' is deprecated and will be removed in a future version, please use 'ME' instead.
+  order=pd.date_range('2024-01-01', periods=12, freq='M').strftime('%B'))
+
+🧾 Department Summary:
+   Department  Total_Hours  Avg_Hours  Count
+0         HR          310      155.0      2
+1         IT          355      177.5      2
+2      Sales          335      167.5      2
+
+🏆 Department with highest average hours: IT
+
+📌 Pivot Table of Department Work Hours:
+                   sum       mean
+           Work_Hours Work_Hours
+Department
+HR                310      155.0
+IT                355      177.5
+Sales             335      167.5
+c:\Users\hp\Documents\DEV\DEV4c.py:97: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=dept_summary, x='Department', y='Avg_Hours', palette='Set2')
+c:\Users\hp\Documents\DEV\DEV4c.py:104: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(data=emp_df, x='Department', y='Work_Hours', palette='Set3')
